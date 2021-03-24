@@ -1,0 +1,165 @@
+body{ /*color del fondo*/
+
+    background-color: #d0ece2;/*#c6dbd2a2*/
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+}
+
+.card{/*background contenedores*/
+
+    background-color: #88bea5e0;
+    border: 1px solid #51645b;
+}
+
+.sedes{/*background contenedores*/
+
+    background-color: #88bea5e0;
+    border: 1px solid #51645b;
+    margin-top: 20px;
+}
+
+.sedes .card{/*background contenedores hijos*/
+
+    background-color: #b0e4ca;
+}
+
+section{/*margen superior e inferior para los contenedores*/
+
+    margin-top: 70px;
+}
+
+.fa-store-alt{/*config icono tienda*/
+
+    font-size: 300%;
+    margin-bottom: 20px;
+    color: #51645b;
+}
+
+a{/*establece color de etiqueta "a" como heredado*/
+    color: inherit;
+    
+}
+
+a:hover{
+    color: inherit;
+}
+
+.navbar-fixtop{/*navbar fixed en el top*/
+
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;   
+    z-index: 1;
+    background-color: #313835b6;
+    color: #b0e4ca;
+}
+
+.navbar-item{/*navbar items*/
+
+    border-radius: 4%;
+    padding-left: 9px;
+    padding-right: 9px;
+    
+}
+
+.navbar-item a{
+    text-decoration: none;
+   
+}
+
+.left{/*items a la izquierda, marca*/
+
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 5vw;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.left i {/*tamaño logo*/
+    font-size: 22px;
+}
+
+.right{/*items a la derecha, desplegar navegacion*/
+
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 2vw;
+    float: right;
+}
+
+.navbar-item:hover{/*efecto hover sobre items del navbar*/
+
+    text-decoration: none;
+    transition: ease;
+    transition-duration: 400ms;
+    color: #b0e4ca;
+    background-color: #313835;
+}
+
+.titles{
+    font-size: 13vh;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #86ccaa;
+}
+.centext-titulo{/* titulos centrados */
+
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 35%;
+
+    text-align: center;
+}
+.img-parallax{/* config div imagen parallax */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-parallax span{/* config texto hijo en las imagenes, border-radius, bg-color */
+
+    border-radius: 4%;
+    background-color: #31383531;  
+}
+
+.img-welcome{/* imagen de bienvenida */
+
+    height: 100vh;
+    background-image: url('../img/img5.jpg');
+}
+.subtitles{
+    font-size: 8vh;  
+}
+
+.cajas-productos{
+
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.cajas-productos .card{
+    width: 88%;
+    height: 75%;
+}
+
+
+@keyframes abracadabra { /* muestra elementos imcrementando su tamaño desde cero */
+    
+    from {
+        opacity: 0;
+        transform: scale(0);     
+    }
+    
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.abracadabra{
+
+    animation: abracadabra 900ms;
+}

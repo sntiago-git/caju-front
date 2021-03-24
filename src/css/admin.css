@@ -1,0 +1,124 @@
+
+.sidebar{
+
+    width: 25vw;
+    height: 100vh;
+    padding-top: 125px; 
+}
+
+.sidebar-item{
+
+    margin-left: 80px;
+    margin-bottom: 50px; 
+    width: 50%;
+    display: block;
+    color: #313835;
+    border: 1px solid #313835;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    font-size: 120%;
+    cursor: pointer;
+}
+.sidebar-item a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sidebar-item:hover{
+
+    background-color: #313835;
+    transform: scale(1.2);
+    
+    color: #b0e6ca;
+    border: 1px solid #313835;
+}
+.item-form{
+
+    margin-left: 80px;
+    margin-bottom: 20px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    display: block;
+    color: #313835;
+    border: 1px solid #313835;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    font-size: 120%;
+}
+.item-form:focus{
+
+    background-color: #313835;
+    transform: scale(1.2);
+    
+    color: #b0e6ca;
+    border: 1px solid #313835;
+}
+.contenedor-tabla{
+   
+    width: 75vw;
+    position: absolute;
+    left: 24vw;
+    top: 20vh;
+    border: 1px solid #313835;
+
+}
+.contenedor-form{
+   
+    width: 75vw;
+    position: absolute;
+    left: 24vw;
+    top: 20vh;
+    padding-left: 200px;
+}
+.contenedor-etiquetas{
+   
+    width: auto;
+    position: absolute;
+    left: 0;
+    top: 9vh;
+}
+
+.item-etiquetas{
+
+    margin-left: 80px;
+    margin-bottom: 19px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    display: block;
+    color: #b0e6ca;
+    background-color: #313835;
+    border: 1px solid #b0e6ca;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    font-size: 120%;
+}
+.item-etiquetas:hover{
+
+    background-color: #b0e6ca;
+    transform: scale(1.2);
+    
+    color: #313835;
+    border: 1px solid #313835;
+}
+
+
+h1{
+    padding-top: 5px; 
+    padding-bottom: 8px; 
+    border-bottom: 1px solid #313835;
+}
+
+.activo{
+
+    background-color: #313835;
+    color: #b0e6ca;
+}
+
+td, th, thead{
+    border: 1px solid #313835;
+}
