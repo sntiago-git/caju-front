@@ -20,7 +20,14 @@ class DoVenta extends Component {
 
         e.preventDefault();
 
+
         try {
+
+            if(!this.refs.fechaVenta.value) return alert("Debes ingresar la fecha");
+
+            alert("Nueva venta ha sido creada");
+            document.location.reload();
+
             const res = await axios.post('https://caju-back.herokuapp.com/api/ventas/', {
                 cliente: this.refs.clienteVenta.value,
                 producto: this.refs.productoVenta.value,
@@ -29,9 +36,8 @@ class DoVenta extends Component {
                 fechaCompra: this.refs.fechaVenta.value,
             })
             console.log(res);
-            alert("Nueva venta ha sido creada");
-            document.location.reload();
-            
+
+
         } catch (error) {
             alert(error.response.data.error);
         }
@@ -63,7 +69,7 @@ class DoVenta extends Component {
                     </select>
 
                     <input className="item-form " type="number" placeholder="Cantidad" ref="cantidadVenta" />
-                    
+
                     <select className="item-form " ref="clienteVenta">
                         {
                             this.state.clientes.map(item => <option value={item.nombre} key={item._id}>{item.nombre}</option>)
@@ -74,7 +80,7 @@ class DoVenta extends Component {
                         <option value="Credito">Credito</option>
                     </select>
 
-                    <button  type="submit" className="item-form " >Guardar</button>
+                    <button type="submit" className="item-form " >Guardar</button>
 
                 </form>
             </div>
