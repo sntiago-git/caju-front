@@ -60,11 +60,13 @@ a:hover{
     border-radius: 4%;
     padding-left: 9px;
     padding-right: 9px;
+    cursor: pointer;
     
 }
 
 .navbar-item a{
     text-decoration: none;
+    cursor: pointer;
    
 }
 
